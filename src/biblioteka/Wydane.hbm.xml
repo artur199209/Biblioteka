@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bibliotekahibernate">
+  <class name="biblioteka.Osoba" table="Osoba">
+    <id column="id" name="id">
+      <generator class="native"/>
+    </id>
+    <property name="id_ksiazki"/>
+    <property name="id_osoby"/>
+    <property name="wydano"/>
+    <property name="zwrot"/>
+  </class>
+</hibernate-mapping>
